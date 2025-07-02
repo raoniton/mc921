@@ -1,0 +1,22 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=i) @ 3:13
+                    Type: int @ 3:9
+                    Constant: int, 3 @ 3:17
+                MethodCall: @ 4:9
+                    This: @ 4:9
+                    ID: f @ 4:14
+                    ID: i @ 4:16
+        MethodDecl: ID(name=f) @ 7:5
+            Type: int @ 7:12
+            ParamList:
+                ParamDecl: ID(name=i) @ 7:18
+                    Type: int @ 7:18
+            Compound: @ 7:25
+                Assert: @ 8:9
+                    BinaryOp: > @ 8:16
+                        ID: i @ 8:16
+                        Constant: int, 0 @ 8:20

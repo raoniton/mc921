@@ -1,0 +1,1 @@
+SemanticError: Array dimension must be of type(int), not type(char) @ 6:13

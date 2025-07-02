@@ -1,0 +1,43 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=n) @ 3:13
+                    Type: int @ 3:9
+                VarDecl: ID(name=reverse) @ 3:16
+                    Type: int @ 3:9
+                VarDecl: ID(name=rem) @ 3:25
+                    Type: int @ 3:9
+                Assignment: = @ 4:9
+                    ID: reverse @ 4:9
+                    Constant: int, 0 @ 4:19
+                Assignment: = @ 5:9
+                    ID: n @ 5:9
+                    Constant: int, 1234 @ 5:13
+                While: @ 7:9
+                    BinaryOp: != @ 7:16
+                        ID: n @ 7:16
+                        Constant: int, 0 @ 7:21
+                    Compound: @ 7:24
+                        Assignment: = @ 8:13
+                            ID: rem @ 8:13
+                            BinaryOp: % @ 8:19
+                                ID: n @ 8:19
+                                Constant: int, 10 @ 8:23
+                        Assignment: = @ 9:13
+                            ID: reverse @ 9:13
+                            BinaryOp: + @ 9:23
+                                BinaryOp: * @ 9:23
+                                    ID: reverse @ 9:23
+                                    Constant: int, 10 @ 9:33
+                                ID: rem @ 9:38
+                        Assignment: = @ 10:13
+                            ID: n @ 10:13
+                            BinaryOp: / @ 10:17
+                                ID: n @ 10:17
+                                Constant: int, 10 @ 10:21
+                Print: @ 13:9
+                    Constant: String, "Reversed Number: " @ 13:15
+                Print: @ 14:9
+                    ID: reverse @ 14:15

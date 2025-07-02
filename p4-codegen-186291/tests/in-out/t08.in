@@ -1,0 +1,17 @@
+class Field {
+    int value;
+}
+
+class Age extends Field {
+    public void set_age(int age) {
+        this.value = age;
+    }
+}
+
+class Program {
+    public static void main(String[] args) {
+        Age age = new Age();
+        age.set_age(15);
+        print(age.value);
+    }
+}

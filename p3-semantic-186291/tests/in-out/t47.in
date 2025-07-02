@@ -1,0 +1,7 @@
+class Main {
+    public static void main(String[] args) {
+        int n, i;
+        int[] num = {0, 1, 2};
+        int sum = 0, avg;
+    }
+}

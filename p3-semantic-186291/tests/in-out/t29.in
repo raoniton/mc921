@@ -1,0 +1,9 @@
+class Main {
+    public void a() {
+        return;
+    }
+    public static void main(String[] args) {
+        print(this.a());
+        return;
+    }
+}

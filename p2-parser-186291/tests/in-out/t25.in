@@ -1,0 +1,24 @@
+/* Bubble sort code */
+
+class Main {
+    public static void main(String[] args) {
+        int[] array = {64, 34, 25, 12, 22, 11, 90};
+        int n = array.length;
+        int c, d, swap;
+
+        for (c = 0; c < n - 1; c = c + 1) {
+            for (d = 0; d < n - c - 1; d = d + 1) {
+                if (array[d] > array[d + 1]) {
+                    swap = array[d];
+                    array[d] = array[d + 1];
+                    array[d + 1] = swap;
+                }
+            }
+        }
+
+        print("Sorted list in ascending order:");
+        for (c = 0; c < n; c = c + 1) {
+            print(array[c]);
+        }
+    }
+}

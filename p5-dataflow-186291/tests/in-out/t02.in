@@ -1,0 +1,19 @@
+// number squared
+class Program {
+    int n = 8;
+
+    public int doubleMe (int x) {
+        return x * x;
+    }
+
+    public static void main(String[] args) {
+        int v = this.n;
+        int w = v + this.n;
+        int ww = w + this.n;
+        int www = ww + this.n;
+        v = this.doubleMe(v);
+        assert v == this.n * this.n;
+        print(v);
+        return;
+    }
+}

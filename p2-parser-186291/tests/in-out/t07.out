@@ -1,0 +1,5 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44

@@ -1,0 +1,6 @@
+class Main {
+    public static void main(String[] args) {
+        this.i(3);
+        return 0;
+    }
+}

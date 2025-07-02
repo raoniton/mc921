@@ -1,0 +1,11 @@
+class Program {
+    // Print array
+    int[] v = new int[4];
+
+    public static void main(String[] args) {
+    	for (int i = 0; i <= 3; i=i+1)
+    	    this.v[i] = i + 1;
+        for (int i = 0; i <= 3; i=i+1)
+            print(this.v[i]);
+    }
+}

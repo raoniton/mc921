@@ -1,0 +1,21 @@
+[flake8]
+exclude = 
+    .git
+    __pycache__
+    docs/source/conf.py
+    old
+    build
+    dist
+    # Python Env
+    .venv
+    venv
+select = 
+    E9
+    F63
+    F7
+    F82
+extend-ignore = F821
+count = True
+show-source = True
+statistics = True
+max-line-length = 120

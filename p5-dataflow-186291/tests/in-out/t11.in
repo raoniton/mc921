@@ -1,0 +1,20 @@
+// find LCM of two numbers using recursion.
+class Program {
+    int temp = 1;
+    public static void main(String[] args) {
+        int a = 6, b = 9, lcm;
+        lcm = this.find_lcm(a, b);
+        print("LCM of ", a, " and ", b, " is: ", lcm);
+    }
+
+    public int find_lcm(int a, int b) {
+        if(this.temp % a == 0 && this.temp % b == 0) {
+            return this.temp;
+        }
+        else {
+            this.temp = this.temp + 1;
+            this.find_lcm(a, b);
+            return this.temp;
+        }
+    }
+}

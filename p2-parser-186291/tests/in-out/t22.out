@@ -1,0 +1,29 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=v) @ 3:15
+                    Type: int[] @ 3:9
+                    InitList: @ 3:20
+                        Constant: int, 1 @ 3:20
+                        Constant: int, 2 @ 3:23
+                        Constant: int, 3 @ 3:26
+                        Constant: int, 4 @ 3:29
+                For: @ 4:9
+                    DeclList: @ 4:9
+                        VarDecl: ID(name=i) @ 4:18
+                            Type: int @ 4:14
+                            Constant: int, 0 @ 4:22
+                    BinaryOp: < @ 4:25
+                        ID: i @ 4:25
+                        Constant: int, 4 @ 4:29
+                    Assignment: = @ 4:32
+                        ID: i @ 4:32
+                        BinaryOp: + @ 4:36
+                            ID: i @ 4:36
+                            Constant: int, 1 @ 4:40
+                    Print: @ 5:13
+                        ArrayRef: @ 5:19
+                            ID: v @ 5:19
+                            ID: i @ 5:21

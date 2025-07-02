@@ -1,0 +1,8 @@
+class Main {
+    public int f(int x, int x) {
+        return x+y;
+    }
+    public static void main(String[] args) {
+        this.f(1, 2);
+    }
+}

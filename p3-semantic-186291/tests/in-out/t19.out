@@ -1,0 +1,1 @@
+SemanticError: conditional expression is type(int), not type(bool) @ 4:9

@@ -1,0 +1,38 @@
+/* Check Armstrong Numbers */
+
+/*
+ * Armstrong number is a number which is equal to sum of digits
+ * raise to the power of total number of digits in the number.
+ * Ex: 0, 1, 2, 3, 153, 370, 407, 1634, 8208
+ */
+class Main {
+    public int power(int n, int r) {
+        int p = 1;
+        for (int c = 1; c <= r; c = c + 1)
+            p = p * n;
+        return p;
+    }
+
+    public static void main(String[] args) {
+        int n = 153, sum = 0;
+        int temp, remainder, digits = 0;
+
+        temp = n;
+        while (temp != 0) {
+            digits = digits + 1;
+            temp = temp / 10;
+        }
+        
+        temp = n;
+        while (temp != 0) {
+            remainder = temp % 10;
+            sum = sum + this.power(remainder, digits);
+            temp = temp / 10;
+        }
+        
+        if (n == sum)
+            print(n, " is an Armstrong number.");
+        else
+            print(n, " is not an Armstrong number.");
+    }
+}

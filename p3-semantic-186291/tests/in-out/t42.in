@@ -1,0 +1,6 @@
+class Main {
+    public static void main(String[] args) {
+        char[] arr = "str";
+        return;
+    }
+}

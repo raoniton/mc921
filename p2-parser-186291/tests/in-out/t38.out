@@ -1,0 +1,50 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=n) @ 3:13
+                    Type: int @ 3:9
+                    Constant: int, 1001 @ 3:15
+                VarDecl: ID(name=r) @ 3:21
+                    Type: int @ 3:9
+                    Constant: int, 0 @ 3:25
+                VarDecl: ID(name=t) @ 3:28
+                    Type: int @ 3:9
+                Assignment: = @ 5:9
+                    ID: t @ 5:9
+                    ID: n @ 5:13
+                While: @ 7:9
+                    BinaryOp: != @ 7:16
+                        ID: t @ 7:16
+                        Constant: int, 0 @ 7:21
+                    Compound: @ 8:9
+                        Assignment: = @ 9:13
+                            ID: r @ 9:13
+                            BinaryOp: * @ 9:17
+                                ID: r @ 9:17
+                                Constant: int, 10 @ 9:21
+                        Assignment: = @ 10:13
+                            ID: r @ 10:13
+                            BinaryOp: + @ 10:17
+                                ID: r @ 10:17
+                                BinaryOp: % @ 10:21
+                                    ID: t @ 10:21
+                                    Constant: int, 10 @ 10:23
+                        Assignment: = @ 11:13
+                            ID: t @ 11:13
+                            BinaryOp: / @ 11:17
+                                ID: t @ 11:17
+                                Constant: int, 10 @ 11:19
+                If: @ 14:9
+                    BinaryOp: == @ 14:13
+                        ID: n @ 14:13
+                        ID: r @ 14:18
+                    Print: @ 15:13
+                        ExprList: @ 15:19
+                            ID: n @ 15:19
+                            Constant: String, " is a palindrome number." @ 15:22
+                    Print: @ 17:13
+                        ExprList: @ 17:19
+                            ID: n @ 17:19
+                            Constant: String, " isn't a palindrome number." @ 17:22

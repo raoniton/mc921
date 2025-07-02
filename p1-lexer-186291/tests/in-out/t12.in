@@ -1,0 +1,19 @@
+class Main {
+    public static void main(String[] args) {
+        Main mainObj = new Main();
+        int m = 9;
+        print(mainObj.f(3, m));
+    }
+
+    public int f(int n, int k) {
+        int p, q, t;
+        if (n < 2) {
+            k = 0;
+            return n;
+        } else {
+            t = this.f(n - 1, p) + this.f(n - 2, q);
+            k = p + q + 1;
+            return t;
+        }
+    }
+}

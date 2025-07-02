@@ -1,0 +1,7 @@
+class Main {
+    char a = 'a';
+    int a = 97;
+    public static void main(String[] args) {
+        a = a + 'b';       
+    }
+}

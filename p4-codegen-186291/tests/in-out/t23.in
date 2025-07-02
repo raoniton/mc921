@@ -1,0 +1,17 @@
+class Program {
+    String x = "test";
+
+    public static void main(String[] args) {
+        String y = "test";
+        print("x: ", this.x);
+        print();
+        print("y: ", y);
+        print();
+        if (this.x == "test") {
+            print("equal");
+        }
+        else {
+            print("not equal");
+        }
+    }
+}

@@ -1,0 +1,43 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        VarDecl: ID(name=n) @ 2:9
+            Type: int @ 2:5
+            Constant: int, 3 @ 2:13
+        MethodDecl: ID(name=doubleMe) @ 4:5
+            Type: int @ 4:12
+            ParamList:
+                ParamDecl: ID(name=x) @ 4:25
+                    Type: int @ 4:25
+            Compound: @ 4:32
+                Return: @ 5:9
+                    BinaryOp: * @ 5:16
+                        ID: x @ 5:16
+                        ID: x @ 5:20
+        MainMethodDecl: @ 8:5
+            ID: args @ 8:38
+            Compound: @ 8:44
+                VarDecl: ID(name=obj) @ 9:14
+                    Type: ID(name=Main) @ 9:9
+                    NewObject: @ 9:20
+                        Type: ID(name=Main) @ 9:24
+                VarDecl: ID(name=v) @ 10:13
+                    Type: int @ 10:9
+                    FieldAccess: @ 10:17
+                        ID: obj @ 10:17
+                        ID: n @ 10:21
+                Assignment: = @ 11:9
+                    ID: v @ 11:9
+                    MethodCall: @ 11:13
+                        ID: obj @ 11:13
+                        ID: doubleMe @ 11:17
+                        ID: v @ 11:26
+                Assert: @ 12:9
+                    BinaryOp: == @ 12:16
+                        ID: v @ 12:16
+                        BinaryOp: * @ 12:21
+                            FieldAccess: @ 12:21
+                                ID: obj @ 12:21
+                                ID: n @ 12:25
+                            FieldAccess: @ 12:29
+                                ID: obj @ 12:29
+                                ID: n @ 12:33

@@ -1,0 +1,199 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MethodDecl: ID(name=quicksort) @ 2:5
+            Type: void @ 2:12
+            ParamList:
+                ParamDecl: ID(name=number) @ 2:27
+                    Type: int[] @ 2:27
+                ParamDecl: ID(name=first) @ 2:41
+                    Type: int @ 2:41
+                ParamDecl: ID(name=last) @ 2:52
+                    Type: int @ 2:52
+            Compound: @ 2:62
+                VarDecl: ID(name=i) @ 3:13
+                    Type: int @ 3:9
+                VarDecl: ID(name=j) @ 3:16
+                    Type: int @ 3:9
+                VarDecl: ID(name=pivot) @ 3:19
+                    Type: int @ 3:9
+                VarDecl: ID(name=temp) @ 3:26
+                    Type: int @ 3:9
+                If: @ 5:9
+                    BinaryOp: < @ 5:13
+                        ID: first @ 5:13
+                        ID: last @ 5:21
+                    Compound: @ 5:27
+                        Assignment: = @ 6:13
+                            ID: pivot @ 6:13
+                            ID: first @ 6:21
+                        Assignment: = @ 7:13
+                            ID: i @ 7:13
+                            ID: first @ 7:17
+                        Assignment: = @ 8:13
+                            ID: j @ 8:13
+                            ID: last @ 8:17
+                        While: @ 10:13
+                            BinaryOp: < @ 10:20
+                                ID: i @ 10:20
+                                ID: j @ 10:24
+                            Compound: @ 10:27
+                                While: @ 11:17
+                                    BinaryOp: && @ 11:24
+                                        BinaryOp: <= @ 11:24
+                                            ArrayRef: @ 11:24
+                                                ID: number @ 11:24
+                                                ID: i @ 11:31
+                                            ArrayRef: @ 11:37
+                                                ID: number @ 11:37
+                                                ID: pivot @ 11:44
+                                        BinaryOp: < @ 11:54
+                                            ID: i @ 11:54
+                                            ID: last @ 11:58
+                                    Assignment: = @ 12:21
+                                        ID: i @ 12:21
+                                        BinaryOp: + @ 12:25
+                                            ID: i @ 12:25
+                                            Constant: int, 1 @ 12:29
+                                While: @ 13:17
+                                    BinaryOp: > @ 13:24
+                                        ArrayRef: @ 13:24
+                                            ID: number @ 13:24
+                                            ID: j @ 13:31
+                                        ArrayRef: @ 13:36
+                                            ID: number @ 13:36
+                                            ID: pivot @ 13:43
+                                    Assignment: = @ 14:21
+                                        ID: j @ 14:21
+                                        BinaryOp: - @ 14:25
+                                            ID: j @ 14:25
+                                            Constant: int, 1 @ 14:29
+                                If: @ 15:17
+                                    BinaryOp: < @ 15:21
+                                        ID: i @ 15:21
+                                        ID: j @ 15:25
+                                    Compound: @ 15:28
+                                        Assignment: = @ 16:21
+                                            ID: temp @ 16:21
+                                            ArrayRef: @ 16:28
+                                                ID: number @ 16:28
+                                                ID: i @ 16:35
+                                        Assignment: = @ 17:21
+                                            ArrayRef: @ 17:21
+                                                ID: number @ 17:21
+                                                ID: i @ 17:28
+                                            ArrayRef: @ 17:33
+                                                ID: number @ 17:33
+                                                ID: j @ 17:40
+                                        Assignment: = @ 18:21
+                                            ArrayRef: @ 18:21
+                                                ID: number @ 18:21
+                                                ID: j @ 18:28
+                                            ID: temp @ 18:33
+                        Assignment: = @ 22:13
+                            ID: temp @ 22:13
+                            ArrayRef: @ 22:20
+                                ID: number @ 22:20
+                                ID: pivot @ 22:27
+                        Assignment: = @ 23:13
+                            ArrayRef: @ 23:13
+                                ID: number @ 23:13
+                                ID: pivot @ 23:20
+                            ArrayRef: @ 23:29
+                                ID: number @ 23:29
+                                ID: j @ 23:36
+                        Assignment: = @ 24:13
+                            ArrayRef: @ 24:13
+                                ID: number @ 24:13
+                                ID: j @ 24:20
+                            ID: temp @ 24:25
+                        MethodCall: @ 25:13
+                            This: @ 25:13
+                            ID: quicksort @ 25:18
+                            ExprList: @ 25:28
+                                ID: number @ 25:28
+                                ID: first @ 25:36
+                                BinaryOp: - @ 25:43
+                                    ID: j @ 25:43
+                                    Constant: int, 1 @ 25:47
+                        MethodCall: @ 26:13
+                            This: @ 26:13
+                            ID: quicksort @ 26:18
+                            ExprList: @ 26:28
+                                ID: number @ 26:28
+                                BinaryOp: + @ 26:36
+                                    ID: j @ 26:36
+                                    Constant: int, 1 @ 26:40
+                                ID: last @ 26:43
+        MainMethodDecl: @ 30:5
+            ID: args @ 30:38
+            Compound: @ 30:44
+                VarDecl: ID(name=number) @ 31:15
+                    Type: int[] @ 31:9
+                    InitList: @ 31:25
+                        Constant: int, 24 @ 31:25
+                        Constant: int, 17 @ 31:29
+                        Constant: int, 85 @ 31:33
+                        Constant: int, 13 @ 31:37
+                        Constant: int, 9 @ 31:41
+                        Constant: int, 54 @ 31:44
+                        Constant: int, 76 @ 31:48
+                        Constant: int, 45 @ 31:52
+                        Constant: int, 8 @ 31:56
+                        Constant: int, 34 @ 31:59
+                VarDecl: ID(name=count) @ 32:13
+                    Type: int @ 32:9
+                    Length: @ 32:21
+                        ID: number @ 32:21
+                Print: @ 34:9
+                    Constant: String, "Original array:" @ 34:15
+                For: @ 35:9
+                    DeclList: @ 35:9
+                        VarDecl: ID(name=i) @ 35:18
+                            Type: int @ 35:14
+                            Constant: int, 0 @ 35:22
+                    BinaryOp: < @ 35:25
+                        ID: i @ 35:25
+                        ID: count @ 35:29
+                    Assignment: = @ 35:36
+                        ID: i @ 35:36
+                        BinaryOp: + @ 35:40
+                            ID: i @ 35:40
+                            Constant: int, 1 @ 35:44
+                    Print: @ 36:13
+                        ExprList: @ 36:19
+                            ArrayRef: @ 36:19
+                                ID: number @ 36:19
+                                ID: i @ 36:26
+                            Constant: String, " " @ 36:30
+                Print: @ 37:9
+                MethodCall: @ 39:9
+                    This: @ 39:9
+                    ID: quicksort @ 39:14
+                    ExprList: @ 39:24
+                        ID: number @ 39:24
+                        Constant: int, 0 @ 39:32
+                        BinaryOp: - @ 39:35
+                            ID: count @ 39:35
+                            Constant: int, 1 @ 39:43
+                Print: @ 41:9
+                    Constant: String, "Order of Sorted elements:" @ 41:15
+                For: @ 42:9
+                    DeclList: @ 42:9
+                        VarDecl: ID(name=i) @ 42:18
+                            Type: int @ 42:14
+                            Constant: int, 0 @ 42:22
+                    BinaryOp: < @ 42:25
+                        ID: i @ 42:25
+                        ID: count @ 42:29
+                    Assignment: = @ 42:36
+                        ID: i @ 42:36
+                        BinaryOp: + @ 42:40
+                            ID: i @ 42:40
+                            Constant: int, 1 @ 42:44
+                    Print: @ 43:13
+                        ExprList: @ 43:19
+                            ArrayRef: @ 43:19
+                                ID: number @ 43:19
+                                ID: i @ 43:26
+                            Constant: String, " " @ 43:30
+                Print: @ 44:9

@@ -1,0 +1,107 @@
+Program:
+    ClassDecl: ID(name=Main) @ 8:1
+        MethodDecl: ID(name=power) @ 9:5
+            Type: int @ 9:12
+            ParamList:
+                ParamDecl: ID(name=n) @ 9:22
+                    Type: int @ 9:22
+                ParamDecl: ID(name=r) @ 9:29
+                    Type: int @ 9:29
+            Compound: @ 9:36
+                VarDecl: ID(name=p) @ 10:13
+                    Type: int @ 10:9
+                    Constant: int, 1 @ 10:17
+                For: @ 11:9
+                    DeclList: @ 11:9
+                        VarDecl: ID(name=c) @ 11:18
+                            Type: int @ 11:14
+                            Constant: int, 1 @ 11:22
+                    BinaryOp: <= @ 11:25
+                        ID: c @ 11:25
+                        ID: r @ 11:30
+                    Assignment: = @ 11:33
+                        ID: c @ 11:33
+                        BinaryOp: + @ 11:37
+                            ID: c @ 11:37
+                            Constant: int, 1 @ 11:41
+                    Assignment: = @ 12:13
+                        ID: p @ 12:13
+                        BinaryOp: * @ 12:17
+                            ID: p @ 12:17
+                            ID: n @ 12:21
+                Return: @ 13:9
+                    ID: p @ 13:16
+        MainMethodDecl: @ 16:5
+            ID: args @ 16:38
+            Compound: @ 16:44
+                VarDecl: ID(name=n) @ 17:13
+                    Type: int @ 17:9
+                    Constant: int, 153 @ 17:17
+                VarDecl: ID(name=sum) @ 17:22
+                    Type: int @ 17:9
+                    Constant: int, 0 @ 17:28
+                VarDecl: ID(name=temp) @ 18:13
+                    Type: int @ 18:9
+                VarDecl: ID(name=remainder) @ 18:19
+                    Type: int @ 18:9
+                VarDecl: ID(name=digits) @ 18:30
+                    Type: int @ 18:9
+                    Constant: int, 0 @ 18:39
+                Assignment: = @ 20:9
+                    ID: temp @ 20:9
+                    ID: n @ 20:16
+                While: @ 21:9
+                    BinaryOp: != @ 21:16
+                        ID: temp @ 21:16
+                        Constant: int, 0 @ 21:24
+                    Compound: @ 21:27
+                        Assignment: = @ 22:13
+                            ID: digits @ 22:13
+                            BinaryOp: + @ 22:22
+                                ID: digits @ 22:22
+                                Constant: int, 1 @ 22:31
+                        Assignment: = @ 23:13
+                            ID: temp @ 23:13
+                            BinaryOp: / @ 23:20
+                                ID: temp @ 23:20
+                                Constant: int, 10 @ 23:27
+                Assignment: = @ 26:9
+                    ID: temp @ 26:9
+                    ID: n @ 26:16
+                While: @ 27:9
+                    BinaryOp: != @ 27:16
+                        ID: temp @ 27:16
+                        Constant: int, 0 @ 27:24
+                    Compound: @ 27:27
+                        Assignment: = @ 28:13
+                            ID: remainder @ 28:13
+                            BinaryOp: % @ 28:25
+                                ID: temp @ 28:25
+                                Constant: int, 10 @ 28:32
+                        Assignment: = @ 29:13
+                            ID: sum @ 29:13
+                            BinaryOp: + @ 29:19
+                                ID: sum @ 29:19
+                                MethodCall: @ 29:25
+                                    This: @ 29:25
+                                    ID: power @ 29:30
+                                    ExprList: @ 29:36
+                                        ID: remainder @ 29:36
+                                        ID: digits @ 29:47
+                        Assignment: = @ 30:13
+                            ID: temp @ 30:13
+                            BinaryOp: / @ 30:20
+                                ID: temp @ 30:20
+                                Constant: int, 10 @ 30:27
+                If: @ 33:9
+                    BinaryOp: == @ 33:13
+                        ID: n @ 33:13
+                        ID: sum @ 33:18
+                    Print: @ 34:13
+                        ExprList: @ 34:19
+                            ID: n @ 34:19
+                            Constant: String, " is an Armstrong number." @ 34:22
+                    Print: @ 36:13
+                        ExprList: @ 36:19
+                            ID: n @ 36:19
+                            Constant: String, " is not an Armstrong number." @ 36:22

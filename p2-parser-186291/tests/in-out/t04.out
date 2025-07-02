@@ -1,0 +1,17 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=a) @ 3:13
+                    Type: int @ 3:9
+                    BinaryOp: + @ 3:17
+                        Constant: int, 100 @ 3:17
+                        Constant: int, 50 @ 3:23
+                VarDecl: ID(name=b) @ 4:13
+                    Type: int @ 4:9
+                    BinaryOp: * @ 4:17
+                        BinaryOp: + @ 4:18
+                            Constant: int, 13 @ 4:18
+                            ID: a @ 4:23
+                        Constant: int, 10 @ 4:28

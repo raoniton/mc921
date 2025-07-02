@@ -1,0 +1,20 @@
+class Arithmetic {
+    public int add(int x, int y) {
+        return x + y;
+    }
+
+    public int subtract(int x, int y) {
+        return x - y;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+       int  foo, bar;
+       Arithmetic arith = new Arithmetic();
+       foo = 5;
+       bar = 15;
+       print(foo, " + ", bar, " = ", arith.add(foo, bar), ", ");
+       print(foo, " - ", bar, " = ", arith.subtract(foo, bar));
+   }
+}

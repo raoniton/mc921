@@ -1,0 +1,29 @@
+// Goldbach's conjecture test
+class Program {
+    public static void main(String[] args) {
+        int n, i, flag = 0;
+        n = 190;
+        for (i = 2; i <= n / 2; i = i + 1) {
+            // condition for i to be a prime number
+            if (this.checkPrime(i) == 1) {
+                // condition for n-i to be a prime number
+                if (this.checkPrime(n - i) == 1) {
+                    flag = 1;
+                }
+            }
+        }
+        assert flag == 1;
+    }
+
+    // check prime number
+    public int checkPrime(int n) {
+        int i, isPrime = 1;
+        for (i = 2; i <= n / 2; i = i + 1) {
+            if (n % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        return isPrime;
+    }
+}

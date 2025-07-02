@@ -1,0 +1,1 @@
+SemanticError: '3' of type(char) is incompatible with type(int) of array @ 3:26

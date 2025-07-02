@@ -1,0 +1,43 @@
+// Compute the Transpose of a Matrix
+class Program {
+    public static void main(String[] args) {
+        int[] a = new int[100], transpose = new int[100];
+        int r, c, i, j;
+        r = 10, c = 10;
+
+        // Assigning elements to the matrix
+        for (i = 0; i < r; i=i+1) {
+            for (j = 0; j < c; j=j+1) {
+                a[r*i+j] = (i*j + i) % 10;
+            }
+        }
+
+        // Displaying the matrix a[][]
+        for (i = 0; i < r; i=i+1) {
+            for (j = 0; j < c; j=j+1) {
+                print(a[r*i+j], " ");
+                if (j == c - 1)
+                    print();
+            }
+        }
+
+        // Finding the transpose of matrix a
+        for (i = 0; i < r; i=i+1) {
+            for (j = 0; j < c; j=j+1) {
+                transpose[r*j+i] = a[r*i+j];
+            }
+        }
+
+        // Displaying the transpose of matrix a
+        print("Transpose of the matrix:");
+        print();
+        for (i = 0; i < c; i=i+1) {
+            for (j = 0; j < r; j=j+1) {
+                print(transpose[r*i+j], " ");
+                if (j == r - 1)
+                    print();
+            }
+        }
+    }
+}
+

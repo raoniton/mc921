@@ -1,0 +1,22 @@
+class Main {
+    public static void main(String[] args) {
+        int n = 5, i;
+        int[] num = new int[100];
+        int sum = 0, avg;
+
+        print("Calculating Average of ", n, " numbers");
+
+        num[0] = 10;
+        num[1] = 20;
+        num[2] = 30;
+        num[3] = 40;
+        num[4] = 50;
+
+        for (i = 0; i < n; i = i + 1) {
+            sum = sum + num[i];
+        }
+
+        avg = sum / n;
+        print("Average = ", avg);
+    }
+}

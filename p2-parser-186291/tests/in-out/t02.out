@@ -1,0 +1,14 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=n) @ 3:13
+                    Type: int @ 3:9
+                VarDecl: ID(name=r) @ 3:16
+                    Type: int @ 3:9
+                VarDecl: ID(name=sum) @ 3:19
+                    Type: int @ 3:9
+                    Constant: int, 0 @ 3:25
+                VarDecl: ID(name=temp) @ 3:28
+                    Type: int @ 3:9

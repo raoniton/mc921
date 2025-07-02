@@ -1,0 +1,16 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        VarDecl: ID(name=N) @ 2:9
+            Type: int @ 2:5
+            Constant: char, 'a' @ 2:13
+        MainMethodDecl: @ 4:5
+            ID: args @ 4:38
+            Compound: @ 4:44
+                VarDecl: ID(name=obj) @ 5:14
+                    Type: ID(name=Main) @ 5:9
+                    NewObject: @ 5:20
+                        Type: ID(name=Main) @ 5:24
+                Print: @ 6:9
+                    FieldAccess: @ 6:15
+                        ID: obj @ 6:15
+                        ID: N @ 6:19

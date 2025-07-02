@@ -1,0 +1,12 @@
+class Main {
+    public static void main(String[] args) {
+        boolean i, j;
+        i = true;
+        j = false;
+
+        if (i && !j)
+            print("pass");
+        else
+            print("fail"); 
+    }
+}

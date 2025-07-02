@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+        int i, count;
+        int[] number = new int[25];
+
+        print("How many elements are u going to enter (max=25)?");
+        value = 23;
+
+        print("Enter", count, "elements: ");
+        for(i=0;i<count;i=i+1)
+            number[i] = i*2;
+    }
+}

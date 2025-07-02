@@ -1,0 +1,40 @@
+class Main {
+    public static void main(String[] args) {
+        int[] a = new int[100], transpose = new int[100];
+        int r, c, i, j;
+        print("Enter rows and columns: ");
+        r = 6, c = 6;
+
+        // Assigning elements to the matrix
+        print("\nEnter matrix elements:\n");
+        for (i = 0; i < r; i=i+1)
+            for (j = 0; j < c; j=j+1) {
+                print("Enter element [", i + 1, j + 1, "]: ");
+                a[i+j] = i*j;
+            }
+
+        // Displaying the matrix a[][]
+        print("\nEntered matrix: \n");
+        for (i = 0; i < r; i=i+1)
+            for (j = 0; j < c; j=j+1) {
+                print(a[i+j]);
+                if (j == c - 1)
+                    print();
+            }
+
+        // Finding the transpose of matrix a
+        for (i = 0; i < r; i=i+1)
+            for (j = 0; j < c; j=j+1) {
+                transpose[j+i] = a[i+j];
+            }
+
+        // Displaying the transpose of matrix a
+        print("\nTranspose of the matrix:\n");
+        for (i = 0; i < c; i=i+1)
+            for (j = 0; j < r; j=j+1) {
+                print(transpose[i+j]);
+                if (j == r - 1)
+                    print();
+            }
+        }
+}

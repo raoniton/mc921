@@ -1,0 +1,18 @@
+/* Bubble sort code */
+class Program {
+    public static void main(String[] args) {
+        int[] v = new int[10];
+        int n = 6, c, d, swap;
+        for (c=0; c<n; c=c+1)
+            v[c] = 10 - c;
+        for (c=0; c<n-1; c=c+1)
+            for (d=0; d<n-c-1; d=d+1)
+                if (v[d] > v[d+1]) {
+                    swap = v[d];
+                    v[d] = v[d+1];
+                    v[d+1] = swap;
+                }
+        for (c=0; c<n; c=c+1)
+            assert v[c] == c + 5;
+    }
+}

@@ -1,0 +1,65 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MethodDecl: ID(name=add) @ 2:5
+            Type: int @ 2:12
+            ParamList:
+                ParamDecl: ID(name=x) @ 2:20
+                    Type: int @ 2:20
+                ParamDecl: ID(name=y) @ 2:27
+                    Type: int @ 2:27
+            Compound: @ 2:34
+                Return: @ 3:9
+                    BinaryOp: + @ 3:16
+                        ID: x @ 3:16
+                        ID: y @ 3:20
+        MethodDecl: ID(name=subtract) @ 6:5
+            Type: int @ 6:12
+            ParamList:
+                ParamDecl: ID(name=x) @ 6:25
+                    Type: int @ 6:25
+                ParamDecl: ID(name=y) @ 6:32
+                    Type: int @ 6:32
+            Compound: @ 6:39
+                Return: @ 7:9
+                    BinaryOp: - @ 7:16
+                        ID: x @ 7:16
+                        ID: y @ 7:20
+        MainMethodDecl: @ 10:5
+            ID: args @ 10:38
+            Compound: @ 10:44
+                VarDecl: ID(name=obj) @ 11:14
+                    Type: ID(name=Main) @ 11:9
+                    NewObject: @ 11:20
+                        Type: ID(name=Main) @ 11:24
+                VarDecl: ID(name=foo) @ 12:13
+                    Type: int @ 12:9
+                    Constant: int, 1 @ 12:19
+                VarDecl: ID(name=bar) @ 12:22
+                    Type: int @ 12:9
+                    Constant: int, 1 @ 12:28
+                Print: @ 13:9
+                    ExprList: @ 13:15
+                        ID: foo @ 13:15
+                        Constant: String, " + " @ 13:20
+                        ID: bar @ 13:27
+                        BinaryOp: + @ 13:32
+                            Constant: String, " = " @ 13:32
+                            MethodCall: @ 13:40
+                                ID: obj @ 13:40
+                                ID: add @ 13:44
+                                ExprList: @ 13:48
+                                    ID: foo @ 13:48
+                                    ID: bar @ 13:53
+                Print: @ 14:9
+                    ExprList: @ 14:15
+                        ID: foo @ 14:15
+                        Constant: String, " - " @ 14:20
+                        ID: bar @ 14:27
+                        BinaryOp: + @ 14:32
+                            Constant: String, " = " @ 14:32
+                            MethodCall: @ 14:40
+                                ID: obj @ 14:40
+                                ID: subtract @ 14:44
+                                ExprList: @ 14:53
+                                    ID: foo @ 14:53
+                                    ID: bar @ 14:58

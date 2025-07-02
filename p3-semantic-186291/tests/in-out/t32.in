@@ -1,0 +1,14 @@
+class Main {
+    int n = 3;
+
+    public int doubleMe(int x) {
+        return x * x;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        int v = obj.n;
+        v = obj.doubleMe(v);
+        assert v == obj.n * obj.n;
+    }
+}

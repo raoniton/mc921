@@ -1,0 +1,69 @@
+Program:
+    ClassDecl: ID(name=Calculator) @ 2:1
+        VarDecl: ID(name=result) @ 3:9
+            Type: int @ 3:5
+        MethodDecl: ID(name=add) @ 6:5
+            Type: void @ 6:12
+            ParamList:
+                ParamDecl: ID(name=a) @ 6:21
+                    Type: int @ 6:21
+                ParamDecl: ID(name=b) @ 6:28
+                    Type: int @ 6:28
+            Compound: @ 6:35
+                Assignment: = @ 7:9
+                    FieldAccess: @ 7:9
+                        This: @ 7:9
+                        ID: result @ 7:14
+                    BinaryOp: + @ 7:23
+                        ID: a @ 7:23
+                        ID: b @ 7:27
+        MethodDecl: ID(name=subtract) @ 11:5
+            Type: void @ 11:12
+            ParamList:
+                ParamDecl: ID(name=a) @ 11:26
+                    Type: int @ 11:26
+                ParamDecl: ID(name=b) @ 11:33
+                    Type: int @ 11:33
+            Compound: @ 11:40
+                Assignment: = @ 12:9
+                    FieldAccess: @ 12:9
+                        This: @ 12:9
+                        ID: result @ 12:14
+                    BinaryOp: - @ 12:23
+                        ID: a @ 12:23
+                        ID: b @ 12:27
+        MethodDecl: ID(name=displayResult) @ 16:5
+            Type: void @ 16:12
+            Compound: @ 16:33
+                Print: @ 17:9
+                    ExprList: @ 17:15
+                        Constant: String, "Result: " @ 17:15
+                        FieldAccess: @ 17:27
+                            This: @ 17:27
+                            ID: result @ 17:32
+    ClassDecl: ID(name=Main) @ 22:1
+        MainMethodDecl: @ 23:5
+            ID: args @ 23:38
+            Compound: @ 23:44
+                VarDecl: ID(name=calc) @ 25:20
+                    Type: ID(name=Calculator) @ 25:9
+                    NewObject: @ 25:27
+                        Type: ID(name=Calculator) @ 25:31
+                MethodCall: @ 28:9
+                    ID: calc @ 28:9
+                    ID: add @ 28:14
+                    ExprList: @ 28:18
+                        Constant: int, 10 @ 28:18
+                        Constant: int, 5 @ 28:22
+                MethodCall: @ 29:9
+                    ID: calc @ 29:9
+                    ID: displayResult @ 29:14
+                MethodCall: @ 32:9
+                    ID: calc @ 32:9
+                    ID: subtract @ 32:14
+                    ExprList: @ 32:23
+                        Constant: int, 10 @ 32:23
+                        Constant: int, 5 @ 32:27
+                MethodCall: @ 33:9
+                    ID: calc @ 33:9
+                    ID: displayResult @ 33:14

@@ -1,0 +1,42 @@
+class Program {
+  int[] arr = {1, 2, 2, 3, 4, 5, 6, 7, 7, 8, 9};
+
+  public int remove_duplicate(int n)
+  {
+    int[] temp = new int[11];
+    int j = 0;
+    int i;
+
+    if (n == 0 || n == 1)
+      return n;
+
+    for (i=0; i<n-1; i=i+1)
+      if (this.arr[i] != this.arr[i + 1]) {
+        temp[j] = this.arr[i];
+        j = j + 1;
+      }
+    temp[j] = this.arr[n - 1];
+    j = j + 1;
+
+    for (i=0; i<j; i=i+1)
+      this.arr[i] = temp[i];
+
+    return j;
+  }
+
+  public static void main(String[] args) {
+    int n = 11, i;
+    print("Array Before Removing Duplicates: ");
+    print();
+    for (i=0; i<n; i=i+1) 
+      print(this.arr[i], " ");
+    print();
+
+    n = this.remove_duplicate(n);
+
+    print("Array After Removing Duplicates: ");
+    print();
+    for (i=0; i<n; i=i+1)
+      print(this.arr[i], " ");
+  }
+}

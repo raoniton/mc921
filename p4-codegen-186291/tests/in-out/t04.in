@@ -1,0 +1,12 @@
+class Program {
+    // multiply accumulate
+    public static void main(String[] args) {
+        int i, j;
+        i = 1;
+        j = 2;
+        for (int k=1; k<10; k=k+1)
+            i = i + j * k;
+        assert i == 91;
+        print(i);
+    }
+}

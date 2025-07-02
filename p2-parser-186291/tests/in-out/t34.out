@@ -1,0 +1,24 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=i) @ 3:17
+                    Type: boolean @ 3:9
+                VarDecl: ID(name=j) @ 3:20
+                    Type: boolean @ 3:9
+                Assignment: = @ 4:9
+                    ID: i @ 4:9
+                    Constant: boolean, true @ 4:13
+                Assignment: = @ 5:9
+                    ID: j @ 5:9
+                    Constant: boolean, false @ 5:13
+                If: @ 7:9
+                    BinaryOp: && @ 7:13
+                        ID: i @ 7:13
+                        UnaryOp: ! @ 7:18
+                            ID: j @ 7:19
+                    Print: @ 8:13
+                        Constant: String, "pass" @ 8:19
+                    Print: @ 10:13
+                        Constant: String, "fail" @ 10:19

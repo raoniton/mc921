@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+        Main mainObj = new Main();
+        int m = -9;
+        int n = -4;
+        print(mainObj.f(m, n));
+    }
+
+    public int f(int m, int n) {
+        if (!(n >= 2)) {
+            n = n - 2;
+            return n;
+        } else {
+            m = m - 1;
+            return m;
+        }
+    }
+}

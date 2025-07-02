@@ -1,0 +1,404 @@
+{
+  "tests": [
+    {
+      "name": "Test 01",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t01",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 01 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t01",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 02",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t02",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 02 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t02",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 03",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t03",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 03 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t03",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 04",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t04",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 04 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t04",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 05",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t05",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 05 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t05",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 06",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t06",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 06 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t06",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 07",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t07",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 07 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t07",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 08",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t08",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 08 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t08",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 09",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t09",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 09 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t09",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t10",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 10 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t10",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 11",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t11",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 11 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t11",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 12",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t12",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 12 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t12",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 13",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t13",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 13 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t13",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 14",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t14",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 14 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t14",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 15",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t15",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 15 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t15",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 16",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t16",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 16 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t16",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 17",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t17",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 17 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t17",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 18",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t18",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 18 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t18",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 19",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t19",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 19 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t19",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    },
+    {
+      "name": "Test 20",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_analysis -k t20",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.5
+    },
+    {
+      "name": "Test 20 (bonus)",
+      "setup": "",
+      "run": "pytest --tb=short -q tests/test_analysis.py::test_bonus -k t20",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0.05
+    }
+  ]
+}

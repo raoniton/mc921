@@ -1,0 +1,6 @@
+class Main {
+    public static void main(String[] args) {
+        int a = 100 + 50;
+        int b = (13 + a) * 10;
+    }
+}

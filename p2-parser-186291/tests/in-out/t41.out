@@ -1,0 +1,79 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=n) @ 3:13
+                    Type: int @ 3:9
+                    Constant: int, 5 @ 3:17
+                VarDecl: ID(name=i) @ 3:20
+                    Type: int @ 3:9
+                VarDecl: ID(name=num) @ 4:15
+                    Type: int[] @ 4:9
+                    NewArray: @ 4:21
+                        Type: int[]
+                        Constant: int, 100 @ 4:29
+                VarDecl: ID(name=sum) @ 5:13
+                    Type: int @ 5:9
+                    Constant: int, 0 @ 5:19
+                VarDecl: ID(name=avg) @ 5:22
+                    Type: int @ 5:9
+                Print: @ 7:9
+                    ExprList: @ 7:15
+                        Constant: String, "Calculating Average of " @ 7:15
+                        ID: n @ 7:42
+                        Constant: String, " numbers" @ 7:45
+                Assignment: = @ 9:9
+                    ArrayRef: @ 9:9
+                        ID: num @ 9:9
+                        Constant: int, 0 @ 9:13
+                    Constant: int, 10 @ 9:18
+                Assignment: = @ 10:9
+                    ArrayRef: @ 10:9
+                        ID: num @ 10:9
+                        Constant: int, 1 @ 10:13
+                    Constant: int, 20 @ 10:18
+                Assignment: = @ 11:9
+                    ArrayRef: @ 11:9
+                        ID: num @ 11:9
+                        Constant: int, 2 @ 11:13
+                    Constant: int, 30 @ 11:18
+                Assignment: = @ 12:9
+                    ArrayRef: @ 12:9
+                        ID: num @ 12:9
+                        Constant: int, 3 @ 12:13
+                    Constant: int, 40 @ 12:18
+                Assignment: = @ 13:9
+                    ArrayRef: @ 13:9
+                        ID: num @ 13:9
+                        Constant: int, 4 @ 13:13
+                    Constant: int, 50 @ 13:18
+                For: @ 15:9
+                    Assignment: = @ 15:14
+                        ID: i @ 15:14
+                        Constant: int, 0 @ 15:18
+                    BinaryOp: < @ 15:21
+                        ID: i @ 15:21
+                        ID: n @ 15:25
+                    Assignment: = @ 15:28
+                        ID: i @ 15:28
+                        BinaryOp: + @ 15:32
+                            ID: i @ 15:32
+                            Constant: int, 1 @ 15:36
+                    Compound: @ 15:39
+                        Assignment: = @ 16:13
+                            ID: sum @ 16:13
+                            BinaryOp: + @ 16:19
+                                ID: sum @ 16:19
+                                ArrayRef: @ 16:25
+                                    ID: num @ 16:25
+                                    ID: i @ 16:29
+                Assignment: = @ 19:9
+                    ID: avg @ 19:9
+                    BinaryOp: / @ 19:15
+                        ID: sum @ 19:15
+                        ID: n @ 19:21
+                Print: @ 20:9
+                    ExprList: @ 20:15
+                        Constant: String, "Average = " @ 20:15
+                        ID: avg @ 20:29

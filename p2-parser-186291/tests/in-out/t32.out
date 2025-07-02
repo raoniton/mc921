@@ -1,0 +1,47 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MethodDecl: ID(name=f) @ 2:5
+            Type: int @ 2:12
+            ParamList:
+                ParamDecl: ID(name=m) @ 2:18
+                    Type: int @ 2:18
+                ParamDecl: ID(name=n) @ 2:25
+                    Type: int @ 2:25
+            Compound: @ 2:32
+                If: @ 3:9
+                    UnaryOp: ! @ 3:13
+                        BinaryOp: < @ 3:15
+                            ID: n @ 3:15
+                            Constant: int, 2 @ 3:19
+                    Compound: @ 3:23
+                        Assignment: = @ 4:13
+                            ID: n @ 4:13
+                            BinaryOp: * @ 4:17
+                                ID: n @ 4:17
+                                Constant: int, 2 @ 4:21
+                        Return: @ 5:13
+                            ID: n @ 5:20
+                    Compound: @ 6:16
+                        Assignment: = @ 7:13
+                            ID: m @ 7:13
+                            BinaryOp: % @ 7:17
+                                ID: m @ 7:17
+                                Constant: int, 2 @ 7:21
+                        Return: @ 8:13
+                            ID: m @ 8:20
+        MainMethodDecl: @ 12:5
+            ID: args @ 12:38
+            Compound: @ 12:44
+                VarDecl: ID(name=m) @ 13:13
+                    Type: int @ 13:9
+                    Constant: int, 9 @ 13:17
+                VarDecl: ID(name=n) @ 14:13
+                    Type: int @ 14:9
+                    Constant: int, 4 @ 14:17
+                Print: @ 15:9
+                    MethodCall: @ 15:15
+                        This: @ 15:15
+                        ID: f @ 15:20
+                        ExprList: @ 15:22
+                            ID: m @ 15:22
+                            ID: n @ 15:25

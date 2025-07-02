@@ -1,0 +1,14 @@
+// Reverse number
+class Program {
+    public static void main(String[] args) {
+        int n, reverse = 0, rem;
+        print("Enter a number: ");
+        n = 1094;
+        while (n != 0) {
+            rem = n % 10;
+            reverse = reverse * 10 + rem;
+            n = n / 10;
+        }
+        print("Reversed Number: ", reverse);
+    }
+}

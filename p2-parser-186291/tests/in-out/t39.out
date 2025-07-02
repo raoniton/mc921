@@ -1,0 +1,53 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=mainObj) @ 3:14
+                    Type: ID(name=Main) @ 3:9
+                    NewObject: @ 3:24
+                        Type: ID(name=Main) @ 3:28
+                VarDecl: ID(name=m) @ 4:13
+                    Type: int @ 4:9
+                    UnaryOp: - @ 4:17
+                        Constant: int, 9 @ 4:18
+                VarDecl: ID(name=n) @ 5:13
+                    Type: int @ 5:9
+                    UnaryOp: - @ 5:17
+                        Constant: int, 4 @ 5:18
+                Print: @ 6:9
+                    MethodCall: @ 6:15
+                        ID: mainObj @ 6:15
+                        ID: f @ 6:23
+                        ExprList: @ 6:25
+                            ID: m @ 6:25
+                            ID: n @ 6:28
+        MethodDecl: ID(name=f) @ 9:5
+            Type: int @ 9:12
+            ParamList:
+                ParamDecl: ID(name=m) @ 9:18
+                    Type: int @ 9:18
+                ParamDecl: ID(name=n) @ 9:25
+                    Type: int @ 9:25
+            Compound: @ 9:32
+                If: @ 10:9
+                    UnaryOp: ! @ 10:13
+                        BinaryOp: >= @ 10:15
+                            ID: n @ 10:15
+                            Constant: int, 2 @ 10:20
+                    Compound: @ 10:24
+                        Assignment: = @ 11:13
+                            ID: n @ 11:13
+                            BinaryOp: - @ 11:17
+                                ID: n @ 11:17
+                                Constant: int, 2 @ 11:21
+                        Return: @ 12:13
+                            ID: n @ 12:20
+                    Compound: @ 13:16
+                        Assignment: = @ 14:13
+                            ID: m @ 14:13
+                            BinaryOp: - @ 14:17
+                                ID: m @ 14:17
+                                Constant: int, 1 @ 14:21
+                        Return: @ 15:13
+                            ID: m @ 15:20

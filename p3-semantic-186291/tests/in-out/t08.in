@@ -1,0 +1,16 @@
+class Main {
+
+    public void f() {
+        char a = 'a';
+        char b = 'b';
+        return;
+    }
+
+    public void f() {
+        return;
+    }
+
+    public static void main(String[] args) {
+        this.f();
+    }
+}

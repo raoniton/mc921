@@ -1,0 +1,13 @@
+class Test {
+    int value;
+}
+
+class Main {
+    public static void main(String[] args) {
+        Test test = new Test();
+    }
+}
+
+class Test {
+    char value;
+}

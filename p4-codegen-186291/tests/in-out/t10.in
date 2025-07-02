@@ -1,0 +1,16 @@
+class Program {
+    // number squared
+    int n = 8;
+
+    public int doubleMe(int x) {
+        return x * x;
+    }
+
+    public static void main(String[] args) {
+        Program obj = new Program();
+        int v = obj.n;
+        v = obj.doubleMe(v);
+        assert v == obj.n * obj.n;
+        print(v);
+    }
+}

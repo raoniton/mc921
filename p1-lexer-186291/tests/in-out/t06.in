@@ -1,0 +1,16 @@
+class Main {
+    public int add(int x, int y) {
+        return x + y;
+    }
+
+    public int subtract(int x, int y) {
+        return x - y;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        int foo = 1, bar = 1;
+        print(foo, " + ", bar, " = ", obj.add(foo, bar));
+        print(foo, " - ", bar, " = ", obj.subtract(foo, bar));
+    }
+}

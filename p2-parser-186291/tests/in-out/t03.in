@@ -1,0 +1,8 @@
+class Main {
+    int N = -(+(!100));
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        print(obj.N);
+    }
+}

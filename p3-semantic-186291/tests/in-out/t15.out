@@ -1,0 +1,1 @@
+SemanticError: Return of type(char) is incompatible with type(void) method definition @ 4:9

@@ -1,0 +1,50 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=n) @ 3:13
+                    Type: int @ 3:9
+                VarDecl: ID(name=r) @ 3:16
+                    Type: int @ 3:9
+                VarDecl: ID(name=sum) @ 3:19
+                    Type: int @ 3:9
+                    Constant: int, 0 @ 3:25
+                VarDecl: ID(name=temp) @ 3:28
+                    Type: int @ 3:9
+                Assignment: = @ 4:9
+                    ID: n @ 4:9
+                    Constant: int, 1001 @ 4:13
+                Assignment: = @ 5:9
+                    ID: temp @ 5:9
+                    ID: n @ 5:16
+                While: @ 6:9
+                    BinaryOp: > @ 6:16
+                        ID: n @ 6:16
+                        Constant: int, 0 @ 6:20
+                    Compound: @ 6:23
+                        Assignment: = @ 7:13
+                            ID: r @ 7:13
+                            BinaryOp: % @ 7:17
+                                ID: n @ 7:17
+                                Constant: int, 10 @ 7:21
+                        Assignment: = @ 8:13
+                            ID: sum @ 8:13
+                            BinaryOp: + @ 8:19
+                                BinaryOp: * @ 8:20
+                                    ID: sum @ 8:20
+                                    Constant: int, 10 @ 8:26
+                                ID: r @ 8:32
+                        Assignment: = @ 9:13
+                            ID: n @ 9:13
+                            BinaryOp: / @ 9:17
+                                ID: n @ 9:17
+                                Constant: int, 10 @ 9:21
+                If: @ 11:9
+                    BinaryOp: == @ 11:13
+                        ID: temp @ 11:13
+                        ID: sum @ 11:21
+                    Print: @ 12:13
+                        Constant: String, "palindrome number" @ 12:19
+                    Print: @ 14:13
+                        Constant: String, "not palindrome" @ 14:19

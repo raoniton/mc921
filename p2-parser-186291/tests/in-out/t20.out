@@ -1,0 +1,48 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=i) @ 3:13
+                    Type: int @ 3:9
+                VarDecl: ID(name=n) @ 3:16
+                    Type: int @ 3:9
+                    Constant: int, 10 @ 3:20
+                VarDecl: ID(name=t1) @ 3:24
+                    Type: int @ 3:9
+                    Constant: int, 0 @ 3:29
+                VarDecl: ID(name=t2) @ 3:32
+                    Type: int @ 3:9
+                    Constant: int, 1 @ 3:37
+                VarDecl: ID(name=nextTerm) @ 3:40
+                    Type: int @ 3:9
+                Print: @ 4:9
+                    Constant: String, "Fibonacci Series: " @ 4:15
+                For: @ 6:9
+                    Assignment: = @ 6:14
+                        ID: i @ 6:14
+                        Constant: int, 1 @ 6:18
+                    BinaryOp: <= @ 6:21
+                        ID: i @ 6:21
+                        ID: n @ 6:26
+                    Assignment: = @ 6:29
+                        ID: i @ 6:29
+                        BinaryOp: + @ 6:33
+                            ID: i @ 6:33
+                            Constant: int, 1 @ 6:37
+                    Compound: @ 6:40
+                        Print: @ 7:13
+                            ExprList: @ 7:19
+                                ID: t1 @ 7:19
+                                Constant: String, " " @ 7:23
+                        Assignment: = @ 8:13
+                            ID: nextTerm @ 8:13
+                            BinaryOp: + @ 8:24
+                                ID: t1 @ 8:24
+                                ID: t2 @ 8:29
+                        Assignment: = @ 9:13
+                            ID: t1 @ 9:13
+                            ID: t2 @ 9:18
+                        Assignment: = @ 10:13
+                            ID: t2 @ 10:13
+                            ID: nextTerm @ 10:18

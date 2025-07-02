@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  pytest:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./uc:/app/uc:rw
+      - ./tests:/app/tests:ro
+    entrypoint: pytest
+
+  test:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./uc:/app/uc:rw
+      - ./tests:/app/tests:ro
+    entrypoint: python3

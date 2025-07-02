@@ -1,0 +1,12 @@
+class Main {
+    public int f() {
+        int i = 0;
+        if(i)
+            return 1;
+        else
+            return 0;
+    }
+    public static void main(String[] args) {
+        this.f();
+    }
+}

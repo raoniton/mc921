@@ -1,0 +1,21 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                VarDecl: ID(name=name) @ 3:16
+                    Type: String @ 3:9
+                VarDecl: ID(name=lastname) @ 3:22
+                    Type: String @ 3:9
+                Assignment: = @ 5:9
+                    ID: name @ 5:9
+                    Constant: String, "John" @ 5:16
+                Assignment: = @ 6:9
+                    ID: lastname @ 6:9
+                    Constant: String, "Doe" @ 6:20
+                Print: @ 8:9
+                    BinaryOp: + @ 8:15
+                        BinaryOp: + @ 8:15
+                            ID: name @ 8:15
+                            Constant: String, " " @ 8:22
+                        ID: lastname @ 8:28

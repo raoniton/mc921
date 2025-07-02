@@ -1,0 +1,204 @@
+{
+    "tests": [
+      {
+        "name": "Test 01",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t01",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 02",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t02",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 03",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t03",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 04",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t04",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 05",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t05",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 06",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t06",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 07",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t07",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 08",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t08",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 09",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t09",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 10",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t10",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 11",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t11",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 12",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t12",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 13",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t13",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 14",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t14",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 15",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t15",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 16",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t16",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 17",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t17",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 18",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t18",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 19",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t19",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      },
+      {
+        "name": "Test 20",
+        "setup": "",
+        "run": "pytest --tb=short -q tests/test_lexer.py::test_lexer -k t20",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 2,
+        "points": 0.5
+      }
+    ]
+  }

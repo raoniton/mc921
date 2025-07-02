@@ -1,0 +1,41 @@
+/* Bubble sort code */
+
+class Program {
+    public static void main(String[] args) {
+        int[] array = new int[100];
+        int n, c, d, swap;
+
+        print("Enter number of elements");
+        print();
+        n = 50;
+
+        print("Enter ", n, " integers");
+        print();
+
+        for (c=0; c<n; c=c+1)
+            array[c] = (c*7)%13;
+
+        for (c=0; c<n; c=c+1)
+            print(array[c], " ");
+        print();
+
+        for (c=0; c<n-1; c=c+1)
+        {
+            for (d=0; d<n-c-1; d=d+1)
+            {
+                if (array[d] > array[d+1]) /* For decreasing order use < */
+                {
+                    swap       = array[d];
+                    array[d]   = array[d+1];
+                    array[d+1] = swap;
+                }
+            }
+        }
+
+        print("Sorted list in ascending order:");
+        print();
+
+        for (c=0; c<n; c=c+1)
+            print(array[c], " ");
+    }
+}

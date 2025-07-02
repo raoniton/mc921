@@ -1,0 +1,46 @@
+class Main {
+    public void quicksort(int[] number, int first, int last) {
+        int i, j, pivot, temp;
+
+        if (first < last) {
+            pivot = first;
+            i = first;
+            j = last;
+
+            while (i < j) {
+                while (number[i] <= number[pivot] && i < last)
+                    i = i + 1;
+                while (number[j] > number[pivot])
+                    j = j - 1;
+                if (i < j) {
+                    temp = number[i];
+                    number[i] = number[j];
+                    number[j] = temp;
+                }
+            }
+
+            temp = number[pivot];
+            number[pivot] = number[j];
+            number[j] = temp;
+            this.quicksort(number, first, j - 1);
+            this.quicksort(number, j + 1, last);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] number = {24, 17, 85, 13, 9, 54, 76, 45, 8, 34};
+        int count = number.length;
+
+        print("Original array:");
+        for (int i = 0; i < count; i = i + 1)
+            print(number[i], " ");
+        print();
+
+        this.quicksort(number, 0, count - 1);
+
+        print("Order of Sorted elements:");
+        for (int i = 0; i < count; i = i + 1)
+            print(number[i], " ");
+        print();
+    }
+}

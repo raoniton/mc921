@@ -1,0 +1,50 @@
+// Base class
+class Animal {
+    int age;
+    String name;
+
+    // Method
+    public void makeSound() {
+        print("Animal sound");
+    }
+}
+
+// Derived class
+class Dog extends Animal {
+    String breed;
+
+    // Override method
+    public void makeSound() {
+        print("Woof!");
+    }
+
+    // New method
+    public void fetch() {
+        print(name, " is fetching.");
+    }
+}
+
+// Main class
+class Main {
+    public static void main(String[] args) {
+        // Create an instance of Animal
+        Animal myAnimal = new Animal();
+        myAnimal.age = 5;
+        myAnimal.name = "Generic Animal";
+        myAnimal.makeSound(); // Output: Animal sound
+
+        // Create an instance of Dog
+        Dog myDog = new Dog();
+        myDog.age = 3;
+        myDog.name = "Buddy";
+        myDog.breed = "Golden Retriever";
+        myDog.makeSound(); // Output: Woof!
+        myDog.fetch();     // Output: Buddy is fetching.
+
+        // Polymorphism: Animal reference to Dog object
+        Animal anotherAnimal = new Dog();
+        anotherAnimal.age = 4;
+        anotherAnimal.name = "Max";
+        anotherAnimal.makeSound(); // Output: Woof!
+    }
+}

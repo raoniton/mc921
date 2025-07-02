@@ -1,0 +1,35 @@
+// A simple class
+class Calculator {
+    int result;
+
+    // Method to add two numbers
+    public void add(int a, int b) {
+        this.result = a + b;
+    }
+
+    // Method to subtract two numbers
+    public void subtract(int a, int b) {
+        this.result = a - b;
+    }
+
+    // Method to display the result
+    public void displayResult() {
+        print("Result: ", this.result);
+    }
+}
+
+// Main class
+class Main {
+    public static void main(String[] args) {
+        // Create an instance of Calculator
+        Calculator calc = new Calculator();
+
+        // Perform addition
+        calc.add(10, 5);
+        calc.displayResult(); // Output: Result: 15
+
+        // Perform subtraction
+        calc.subtract(10, 5);
+        calc.displayResult(); // Output: Result: 5
+    }
+}

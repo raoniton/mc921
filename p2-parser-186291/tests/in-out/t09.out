@@ -1,0 +1,16 @@
+Program:
+    ClassDecl: ID(name=Main) @ 1:1
+        MainMethodDecl: @ 2:5
+            ID: args @ 2:38
+            Compound: @ 2:44
+                MethodCall: @ 3:9
+                    This: @ 3:9
+                    ID: f @ 3:14
+        MethodDecl: ID(name=f) @ 6:5
+            Type: int @ 6:12
+            Compound: @ 6:20
+                VarDecl: ID(name=i) @ 7:13
+                    Type: int @ 7:9
+                    Constant: int, 2 @ 7:17
+                Return: @ 8:9
+                    ID: i @ 8:16

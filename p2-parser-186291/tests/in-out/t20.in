@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+        int i, n = 10, t1 = 0, t2 = 1, nextTerm;
+        print("Fibonacci Series: ");
+
+        for (i = 1; i <= n; i = i + 1) {
+            print(t1, " ");
+            nextTerm = t1 + t2;
+            t1 = t2;
+            t2 = nextTerm;
+        }
+    }
+}

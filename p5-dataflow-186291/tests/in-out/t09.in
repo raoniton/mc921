@@ -1,0 +1,7 @@
+// Assert value
+class Program {
+    public static void main(String[] args) {
+        int y=3;
+        assert y == 3;
+    }
+}
